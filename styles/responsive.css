@@ -6,6 +6,11 @@
         align-items: center;
         gap: 10px;
     }
+    .banner {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    
 }
 
 @media screen and (max-width: 576px) {
@@ -66,6 +71,13 @@
        left: 0;
        z-index: 9;
    }
+
+   /* banner style */
+   .banner {
+       flex-direction: column-reverse;
+       /* text-align: center; */
+   }
+   
 }
 
 

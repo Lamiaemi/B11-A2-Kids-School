@@ -10,7 +10,14 @@
         flex-direction: column-reverse;
         text-align: center;
     }
-    
+    /* standard-curriculam  */
+   .arrow-box {
+    display: none;
+   }
+    .card-container {
+        flex-direction: column;
+    }
+
 }
 
 @media screen and (max-width: 576px) {
@@ -77,6 +84,7 @@
        flex-direction: column-reverse;
        /* text-align: center; */
    }
+   
    
 }
 

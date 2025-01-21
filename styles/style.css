@@ -9,14 +9,23 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+html {
+    font-size: 62.5%;
+}
 body {
     font-family: "Quicksand", serif;
-    font-size: 62.5%;
+    /* font-size: 62.5%; */
     overflow-x: hidden;
 }
 img {
     width: 100%;
+}
+main {
+    background: url(../assets/bg.png);
+    /* height: 100vh; */
+}
+main > section {
+    padding: 6rem 0;
 }
 /* banner styles */
 .banner {
@@ -34,11 +43,11 @@ img {
 }
 .banner-title {
     Font-weight: 700;
-    Font-size: 2.3rem;
+    Font-size: 4rem;
 }
 .banner-description {
     color: rgb(17, 17, 17);
-    font-size: 1.3rem;
+    font-size: 2rem;
     margin: 2rem 0;
 }
 .btn-primary {
@@ -60,6 +69,9 @@ img {
 }
 .blue {
     color: var(--color-2);
+}
+.purple {
+    color: rgb(135, 0, 255);
 }
 /* navbar styles */
 .navbar {
@@ -127,5 +139,92 @@ nav svg {
 .close-sidebar-button {
     display: none;
 }
+/* standard-curriculam styles */
 
-
+.standard-curriculam .section-title {
+    font-size: 4rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 10rem;
+}
+.card-title {
+    color: rgb(32, 32, 32);
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+.card-info {
+    color: rgb(128, 128, 128);
+    font-family: Raleway;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.learn-more {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+.card-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    text-align: center;
+}
+.card1 {
+    box-sizing: border-box;
+    border: 0.94px solid rgb(222, 245, 255);
+    border-radius: 18.86px;
+    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+    background: linear-gradient(180.00deg, rgb(222, 245, 255), rgba(255, 255, 255, 0) 40%), rgb(255, 255, 255);
+}
+.card2 {
+    box-sizing: border-box;
+    border: 0.94px solid rgb(255, 244, 220);
+    border-radius: 18.86px;
+    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+    background: linear-gradient(180.00deg, rgb(255, 244, 220), rgba(255, 255, 255, 0) 40%), rgb(255, 255, 255);
+}
+.card3 {
+    box-sizing: border-box;
+    border: 0.94px solid rgb(242, 232, 255);
+    border-radius: 18.86px;
+    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+    background: linear-gradient(180.00deg, rgb(238, 225, 255), rgba(255, 255, 255, 0) 40%), rgb(255, 255, 255);
+}
+.card-container img {
+    width: 13rem;
+    height: 14rem;
+}
+.card1,
+.card2,
+.card3 {
+    width: 35rem;
+    height: 45rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+.arrow-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+    gap: 1.5rem;
+}
+.arrow-box span {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    background: rgb(254, 163, 1);
+}
+.arrow-box span i {
+    position: absolute;
+    top: 22px;
+    right: 25px;
+    font-size: 2rem;
+    color: white;
+}

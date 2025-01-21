@@ -17,6 +17,16 @@
     .card-container {
         flex-direction: column;
     }
+    .story-container { 
+        grid-template-areas:
+                "big big"
+                "story1 story2"
+                "story3 story4";
+    }
+    .btn-primary:hover {
+    background: var(--primary-color);
+    color: white;
+}
 
 }
 
@@ -84,7 +94,35 @@
        flex-direction: column-reverse;
        /* text-align: center; */
    }
-   
+   .card1,
+   .card2,
+   .card3 {
+    width: 80%;
+   }
+
+   .story-container {
+        grid-template-areas:  
+        "story1 story2"
+        "story3 story4";
+   }
+   .big-story {
+        display: none;
+   }
+   .story {
+        width: auto;
+   }
+   .story h3 {
+        font-size: 3vw;
+        padding: 2rem;
+   }
+   .story-btn {
+        /* padding: .5rem 1rem; */
+        font-size: 2vw;
+        position: relative;
+        top: -1.9rem;
+        left: 1rem;
+   }
+
    
 }
 

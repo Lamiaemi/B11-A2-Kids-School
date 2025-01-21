@@ -56,7 +56,7 @@ main > section {
     font-weight: 700;
     border-radius: 12px;
     background: rgb(17, 17, 17);
-    padding: 1rem 2rem;
+    padding: 1rem 3rem;
     border: none;
     transition: .15s ease-out;
 }
@@ -126,6 +126,10 @@ main > section {
     color: rgb(255, 255, 255);
     font-weight: 600;
     border: none;
+    transition: .50s ease-out;
+}
+.btn-contact:hover {
+    background: var(--color-2);
 }
 /* menubar styles */
 nav svg {
@@ -141,7 +145,7 @@ nav svg {
 }
 /* standard-curriculam styles */
 
-.standard-curriculam .section-title {
+.section-title {
     font-size: 4rem;
     font-weight: 700;
     text-align: center;
@@ -151,12 +155,15 @@ nav svg {
     color: rgb(32, 32, 32);
     font-size: 2.4rem;
     font-weight: 700;
+    /* margin-bottom: 3rem; */
+    padding: 3rem 0;
 }
 .card-info {
     color: rgb(128, 128, 128);
     font-family: Raleway;
     font-size: 1.5rem;
     font-weight: 500;
+    line-height: 28.76px;
 }
 .learn-more {
     font-size: 1.5rem;
@@ -227,4 +234,85 @@ nav svg {
     right: 25px;
     font-size: 2rem;
     color: white;
+}
+/* our story styles */
+.story-btn {
+    border-radius: 47.93px;
+    background: rgb(149, 178, 38);
+    color: rgb(255, 255, 255);
+    font-family: Raleway;
+    font-size: 1.5rem;
+    font-weight: 500;
+    border:none;
+    padding: 1rem 2rem;
+    position: relative;
+    top: -2rem;
+    left: 3rem;
+}
+.btn-1 {
+    border-radius: 47.93px;
+    color: rgb(255, 255, 255);
+    font-family: Raleway;
+    font-size: 1.5rem;
+    font-weight: 500;
+    border: none;
+    padding: 2rem 3rem;
+    background: rgb(60, 216, 232);
+    position: relative;
+    top: -3rem;
+    left: 3rem;
+}
+.our-story {
+    background: url(image), linear-gradient(0.00deg, rgba(254, 163, 1, 0.3), rgba(255, 255, 255, 0.3) 100%);
+}
+.purple-btn {
+    background-color: rgb(135, 0, 255);
+}
+.story-container {
+    display: grid;
+    width: 80%;
+    margin: 0 auto;
+    gap: 3rem;
+    grid-template-areas:
+            "big big story1 story2"
+            "big big story3 story4";
+}
+.big-story {
+    grid-area: big;
+}
+.story1 {
+    grid-area: story1;
+}
+.story2 {
+    grid-area: story2;
+}
+.story3 {
+    grid-area: story3;
+}
+.story4 {
+    grid-area: story4;
+}
+.big-story {
+    border-radius: 16px;
+    background: rgb(255, 255, 255);
+    text-align: left;
+    
+}
+.card-content {
+    padding: 3rem;
+}
+.story-container img {
+    border-radius: 16px 10px 0px 0px;
+}
+.story {
+    border-radius: 16px;
+    background: rgb(255, 255, 255);
+}
+.story h3 {
+    padding: 3rem;
+}
+.btn-div {
+    text-align: center;
+    margin: 4rem 0;
+    /* margin: 0 auto; */
 }
